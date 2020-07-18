@@ -22,6 +22,8 @@ Demo demonstrates adding a framework project (named **MyFrameworkProject**) to t
 
 In the comparison of the above demo, you can find that the system creates a new group named `Product` under `mainGroup` to store `MyFrameworkProject`, while `XcodeProj` stores `MyFrameworkProject` with the old group which named `Product`. This is the difference between the `System` and `Xcodeproj`. 
 
+When you delete `MyFrameworkProject` in `MainProject`, it will also delete `MainProject.app`.
+
 #### Xcodeproj will cause crash if this is done. You can try to add header search paths in the mainproject of 'xcodeproj-1.17.1'. When you finish adding, Xcode will crash.
 
 ![img/1.jpg](img/1.jpg)
