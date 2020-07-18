@@ -2,10 +2,10 @@
 
 ## Directory structure
 
-`Origin`: The original demo, I didn't do anything, just for copying to other folders.
-`MyLib`: How `my version` does it.
-`System`:  how the `system` works
-`XCodeproj-1.17.1`: how `Xcodeproj` does it.
+* `Origin`: The original demo, I didn't do anything, just for copying to other folders.
+* `MyLib`: How `my version` does it.
+* `System`:  how the `system` works
+* `XCodeproj-1.17.1`: how `Xcodeproj` does it.
 
 ## What demo is going to do
 
@@ -24,7 +24,7 @@ In the comparison of the above demo, you can find that the system creates a new 
 
 #### Xcodeproj will cause crash if this is done. You can try to add header search paths in the mainproject of 'xcodeproj-1.17.1'. When you finish adding, Xcode will crash.
 
-![](/img/1.jpg)
+![](img/1.jpg)
 
 The content point I modified is to create a new group and add it to `maingroup` when adding `.xcodeproj` type files. Instead of directly reusing the old group which named `Project`.
 
