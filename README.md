@@ -9,7 +9,7 @@
 
 ## What demo is going to do
 
-Demo demonstrates adding a framework project (named **MyFrameworkProject**) to the main project (named **MainProject**) and referencing it to `Link  Binary With Libraries`.
+Demo demonstrates adding a framework project (named **MyFrameworkProject**) to the main project (named **MainProject**) and referencing it to `Link  Binary With Libraries`. `test.rb` is my script.
 
 ## Environment configuration
 
@@ -24,12 +24,25 @@ In the comparison of the above demo, you can find that the system creates a new 
 
 #### Xcodeproj will cause crash if this is done. You can try to add header search paths in the mainproject of 'xcodeproj-1.17.1'. When you finish adding, Xcode will crash.
 
-![](img/1.jpg)
+![img/1.jpg](img/1.jpg)
 
 The content point I modified is to create a new group and add it to `maingroup` when adding `.xcodeproj` type files. Instead of directly reusing the old group which named `Project`.
 
 For the `remoteInfo` of the newly added project, you can find that the system uses the name of the target of the subproject instead of using the string `Subproject` directly.
 
+## Compare
+
+* System Do
+
+![img/system.jpg](img/system.jpg)
+
+* Xcodeproj Do
+
+![img/xcodeproj.jpg](img/xcodeproj.jpg)
+
+* My Lib Do
+
+![img/myLib.jpg](img/myLib.jpg)
 
 ##  The above conclusions can be compared with the `project.pbxproj` in `MainProject.xcodeproj`  To find out.
 
